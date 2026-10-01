@@ -1,0 +1,91 @@
+.recent-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.recent-header span {
+    color: #1672d4;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.student-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.student-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 13px 0;
+    border-bottom: 1px solid #edf1f5;
+}
+
+.student-item:last-child {
+    border-bottom: 0;
+}
+
+.student-info {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 12px;
+}
+
+.student-avatar {
+    display: flex;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e5f0fb;
+    color: #1768a8;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.student-details {
+    min-width: 0;
+}
+
+.student-details h4 {
+    overflow: hidden;
+    margin: 0 0 4px;
+    color: #263548;
+    font-size: 13px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.student-details span {
+    display: block;
+    overflow: hidden;
+    color: #718096;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.student-status {
+    flex: 0 0 auto;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: #d9f7e5;
+    color: #16834b;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.student-status.inactive {
+    background: #fee2e2;
+    color: #c53030;
+}

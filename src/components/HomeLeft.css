@@ -1,0 +1,125 @@
+.course-card,
+.recent-students {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 22px;
+    background: #fff;
+    border: 1px solid #e8eef5;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(27, 54, 82, 0.07);
+    color: #1e293b;
+}
+
+.course-card h3,
+.recent-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.course-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 28px;
+}
+
+/* Donut chart */
+.course-circle {
+    position: relative;
+    display: flex;
+    flex: 0 0 190px;
+    width: 190px;
+    height: 190px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    background: conic-gradient(#1684e8 0% 30%,
+            #f39a12 30% 45%,
+            #08ae72 45% 60%,
+            #7444d8 60% 70%,
+            #ed3f43 70% 80%,
+            #8b70d6 80% 90%,
+            #f39a12 90% 100%);
+}
+
+.course-circle::before {
+    position: absolute;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background: #fff;
+    content: "";
+}
+
+.course-circle strong,
+.course-circle span {
+    position: relative;
+    z-index: 1;
+}
+
+.course-circle strong {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.course-circle span {
+    margin-top: 4px;
+    color: #718096;
+    font-size: 12px;
+    text-align: center;
+}
+
+.course-list {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 0;
+}
+
+.course-item {
+    display: grid;
+    grid-template-columns: 10px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 9px;
+    color: #526174;
+    font-size: 13px;
+}
+
+.course-item b {
+    color: #334155;
+    font-weight: 600;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.dot.react {
+    background: #1684e8;
+}
+
+.dot.node {
+    background: #8b6845;
+}
+
+.dot.python {
+    background: #08ae72;
+}
+
+.dot.fullstack {
+    background: #f39a12;
+}
+
+.dot.java {
+    background: #ed3f43;
+}
+
+.dot.web {
+    background: #18a5a5;
+}

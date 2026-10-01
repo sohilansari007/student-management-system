@@ -1,0 +1,80 @@
+.not-found-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px);
+  background-color: #ffffff;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 400px;
+}
+
+.not-found-illustration {
+  position: relative;
+  margin-bottom: 24px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Creating a faint background pattern for the 404 */
+.not-found-illustration::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 180px;
+  background-image: 
+    radial-gradient(circle at 20% 30%, #f1f5f9 20px, transparent 21px),
+    radial-gradient(circle at 80% 40%, #f8fafc 30px, transparent 31px),
+    radial-gradient(circle at 40% 70%, #f1f5f9 15px, transparent 16px),
+    radial-gradient(circle at 70% 80%, #f8fafc 25px, transparent 26px);
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.error-code {
+  font-size: 100px;
+  font-weight: 800;
+  color: #1e3a8a; /* Deep blue from the image */
+  margin: 0;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  letter-spacing: -2px;
+}
+
+.not-found-content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+}
+
+.not-found-content p {
+  font-size: 15px;
+  color: #64748b;
+  margin: 0 0 32px 0;
+}
+
+.go-home-button {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #2563eb; /* Blue from image */
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+
+.go-home-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}

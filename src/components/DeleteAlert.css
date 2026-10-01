@@ -1,0 +1,83 @@
+.delete-alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.delete-alert-content {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: 'Inter', sans-serif;
+}
+
+.delete-icon-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.delete-alert-content h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+}
+
+.delete-alert-content p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 6px 0;
+}
+
+.delete-alert-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.delete-cancel-btn {
+  padding: 12px 24px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #475569;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex: 1;
+}
+
+.delete-cancel-btn:hover {
+  background-color: #f8fafc;
+}
+
+.delete-confirm-btn {
+  padding: 12px 24px;
+  border: none;
+  background-color: #ef4444;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex: 1;
+}
+
+.delete-confirm-btn:hover {
+  background-color: #dc2626;
+}

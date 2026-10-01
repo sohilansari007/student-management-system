@@ -1,0 +1,202 @@
+/* =========================
+   Navbar
+========================= */
+
+nav {
+    width: 100%;
+    min-height: 70px;
+    padding: 0 40px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Logo + Student Hub */
+nav > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: auto;
+    flex-shrink: 0;
+}
+
+nav > div:first-child img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+nav > div:first-child h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #111827;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   Navigation Links
+========================= */
+
+nav > a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    text-decoration: none;
+    color: #4b5563;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    padding: 10px 14px;
+    border-radius: 8px;
+
+    white-space: nowrap;
+
+    transition: all 0.2s ease;
+}
+
+nav > a:hover {
+    color: #2563eb;
+    background: #eff6ff;
+}
+
+
+/* =========================
+   Profile
+========================= */
+
+nav > a:last-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav > a:last-child div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > a:last-child img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        padding: 0 25px;
+        gap: 8px;
+    }
+
+    nav > div:first-child h1 {
+        font-size: 19px;
+    }
+
+    nav > div:first-child img {
+        width: 38px;
+        height: 38px;
+    }
+
+    nav > a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 650px) {
+
+    nav {
+        min-height: auto;
+        padding: 15px 18px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    /* Logo row */
+    nav > div:first-child {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    nav > div:first-child img {
+        width: 36px;
+        height: 36px;
+    }
+
+    nav > div:first-child h1 {
+        font-size: 18px;
+    }
+
+    /* Links */
+    nav > a {
+        flex: 1;
+        justify-content: center;
+
+        font-size: 13px;
+        padding: 9px 8px;
+    }
+
+}
+
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 400px) {
+
+    nav {
+        padding: 12px;
+        gap: 5px;
+    }
+
+    nav > div:first-child {
+        margin-bottom: 4px;
+    }
+
+    nav > div:first-child h1 {
+        font-size: 16px;
+    }
+
+    nav > div:first-child img {
+        width: 32px;
+        height: 32px;
+    }
+
+    nav > a {
+        font-size: 12px;
+        padding: 8px 5px;
+    }
+
+    nav > a:last-child img {
+        width: 26px;
+        height: 26px;
+    }
+
+}
