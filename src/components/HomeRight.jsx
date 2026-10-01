@@ -11,7 +11,7 @@ const HomeRight = () => {
     const getUser = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:3000/students"
+                "https://student-management-system-6sa1.onrender.com/students"
             );
 
             setData(response.data);

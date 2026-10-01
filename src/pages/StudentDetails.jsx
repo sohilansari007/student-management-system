@@ -11,7 +11,7 @@ const StudentDetails = () => {
 
   // 1. Fetch all students when component mounts
   useEffect(() => {
-    axios.get("http://localhost:3000/students")
+    axios.get("https://student-management-system-6sa1.onrender.com/students")
       .then(res => {
         setStudents(res.data);
         setLoading(false);
@@ -66,7 +66,7 @@ const StudentDetails = () => {
   const onDelete = async () => {
     if (!window.confirm(`Are you sure you want to delete ${student.name}?`)) return;
     try {
-      await axios.delete(`http://localhost:3000/students/${student.id}`);
+      await axios.delete(`https://student-management-system-6sa1.onrender.com/students/${student.id}`);
       navigate('/Student');
     } catch (err) {
       console.error(err);

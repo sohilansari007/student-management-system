@@ -4,7 +4,7 @@ import "./Student.css";
 import { Link, useNavigate } from "react-router-dom";
 import DeleteAlert from "../components/DeleteAlert";
 
-const API_URL = "http://localhost:3000/students";
+const API_URL = "https://student-management-system-6sa1.onrender.com/students";
 const PAGE_SIZE = 10;
 
 const Student = () => {

@@ -25,7 +25,7 @@ const ViewStudent = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:3000/students/" + id)
+            .get("https://student-management-system-6sa1.onrender.com/students/" + id)
             .then((res) => setStudent(res.data))
             .catch((err) => console.error(err));
     }, [id])
@@ -35,7 +35,7 @@ const ViewStudent = () => {
     const onDelete = () => setIsDeleting(true);
     const handleConfirmDelete = async () => {
         try {
-            await axios.delete("http://localhost:3000/students/" + id);
+            await axios.delete("https://student-management-system-6sa1.onrender.com/students/" + id);
             navigate('/Student');
         } catch (error) {
             console.error(error);

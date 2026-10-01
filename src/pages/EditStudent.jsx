@@ -20,7 +20,7 @@ const EditStudent = () => {
   });
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/students/${id}`)
+    axios.get(`https://student-management-system-6sa1.onrender.com/students/${id}`)
       .then(res => setForm(res.data))
       .catch(err => console.error(err));
   }, [id]);
@@ -31,7 +31,7 @@ const EditStudent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost:3000/students/${id}`, form)
+    axios.put(`https://student-management-system-6sa1.onrender.com/students/${id}`, form)
       .then(() => navigate(-1))
       .catch(err => console.error(err));
   };
